@@ -5,7 +5,7 @@ import "testing"
 func TestEncode(t *testing.T) {
 	text := "Hello, World"
 	expected := "Khoor, Zruog"
-	if result := Encode(text); result != expected {
+	if result := Encode(text, 3); result != expected {
 		t.Errorf("Hello() = %q, want %q", result, expected)
 	}
 }
@@ -13,7 +13,7 @@ func TestEncode(t *testing.T) {
 func TestDecode(t *testing.T) {
 	text := "Khoor, Zruog"
 	expected := "Hello, World"
-	if result := Decode(text); result != expected {
+	if result := Decode(text, 3); result != expected {
 		t.Errorf("Hello() = %q, want %q", result, expected)
 	}
 }
