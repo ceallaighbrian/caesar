@@ -1,3 +1,3 @@
-module github.com/ceallaighbrian/caeasr/v2
+module github.com/ceallaighbrian/caesar/v2
 
 go 1.15
